@@ -23,4 +23,7 @@ The libray provides three macros that take a lambda as argument to mimic their D
 
     SCOPE_FAILURE(<lambda>)  // execute lambda at scope exit, if an exception is thrown
 
-  
+
+## Requirements 
+
+At least a C++ compiler supporting C++17.
