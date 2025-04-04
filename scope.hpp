@@ -22,6 +22,9 @@ namespace op {
             m_func();
         }
 
+        ScopeExit(const ScopeExit &) = delete;
+        ScopeExit &operator=(const ScopeExit &) = delete;
+
     private:
         const std::function<void ()> m_func;
     };
@@ -50,6 +53,9 @@ namespace op {
                 m_func();
             }
         }
+
+        ScopeSuccess(const ScopeSuccess &) = delete;
+        ScopeSuccess &operator=(const ScopeSuccess &) = delete;
 
     private:
         const std::function<void ()> m_func;
@@ -82,6 +88,9 @@ namespace op {
                 m_func();
             }
         }
+
+        ScopeFailure(const ScopeFailure &) = delete;
+        ScopeFailure &operator=(const ScopeFailure &) = delete;
 
     private:
         const std::function<void ()> m_func;
